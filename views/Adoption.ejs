@@ -1,0 +1,72 @@
+<h1 class="mt-4" style="color:white; text-align: center;" >Aston Animal Sancturay</h1>
+<br></br>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<body style="background-color:#171717;">
+    <br></br>
+    <div class="topnav" style=" background-color: #000000; overflow: hidden;">
+        <a class="active" href="dashboard" onmouseover="style.background='#ddd'" onmouseout="style.background='#000000'" style="font-family: 'Open Sans', sans-serif; float: left; color: #f2f2f2; text-align: center; padding: 14px 150.5px; text-decoration: none; font-size: 17px;">Home</a>
+        <a href="Adoption" onmouseover="style.background='#ddd'" onmouseout="style.background='#000000'" style="font-family: 'Open Sans', sans-serif; float: left; color: #f2f2f2; text-align: center; padding: 14px 150.5px; text-decoration: none; font-size: 17px;">Adoption</a>
+        <a href="Contact" onmouseover="style.background='#ddd'" onmouseout="style.background='#000000'" style="font-family: 'Open Sans', sans-serif; float: left; color: #f2f2f2; text-align: center; padding: 14px 150.5px; text-decoration: none; font-size: 17px;">Contact</a>
+      </div>
+<h1 class="mt-4" style="color:white; text-align: center; font-size: 30px;" >Adoption Request Form</h1>
+<div style="color:white; text-align: center;">
+  <p>The purpose of this form is to give full information about your self. this will then allow us to make the best decision for whos adoption request to approve.</p>
+    <p>To submit this form you will have to fill in all the boxes. </p>
+    <p>It is also important that the descriptions are clear and detailed so that we way are making the best decision for the animal.</p>
+  </div>
+<form action="/Adoption" method="POST">
+  <div class="form-group">
+    <label for="name" style="color:white;">Name</label>
+    <input
+      type="name"
+      id="name"
+      name="name"
+      class="form-control"
+      placeholder="Enter Name"
+      value="<% typeof name != 'undefined' ? name : '' %>"
+    />
+  </div>
+  <div class="form-group">
+    <label for="email" style="color:white;">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      placeholder="Enter Email"
+      value="<% typeof email != 'undefined' ? email : '' %>"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="Text" style="color:white;">Which animal or animals would you like to adopt?</label>
+    <input
+      type="Text"
+      id="Text"
+      name="Text"
+      class="form-control"
+      placeholder= "Animal"
+      value="<% typeof Text != 'undefined' ? Text : '' %>"
+    />
+  </div>
+  <div class="form-group">
+    <label for="location" style="color:white;">what is your address? </label>
+    <input
+      type="location"
+      id="location"git
+      name="location"
+      class="form-control"
+      placeholder="Enter Location"
+      value="<% typeof location != 'undefined' ? location : '' %>"
+    />
+  </div>
+
+
+  <button type="submit" class="btn btn-primary btn-block">
+    Submit
+  </button>
+</form>
+</div>
+</div>
+</div>
+</body>
